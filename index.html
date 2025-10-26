@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Utkarsha Bisen — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header container">
+    <div class="logo">Utkarsha Bisen</div>
+    <nav><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Hi, I’m</p>
+        <h1>Utkarsha Bisen</h1>
+        <p class="role">Electronics &amp; Telecommunication — 3rd Year</p>
+        <p class="intro">I build embedded systems and robotics projects focused on real-world impact — flood mitigation, IoT safety, and intelligent systems.</p>
+        <div class="links">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="link" href="https://www.linkedin.com/in/utkarsha-bisen-964786327" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-photo" aria-hidden="true">
+        <div class="photo-circle">
+          <img src="assets/profile.jpg" alt="Utkarsha Bisen">
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Smart Water-Storing Vehicle</h3>
+          <p>Flood mitigation vehicle using Arduino and ultrasonic sensing to collect road water.</p>
+          <p class="meta">Arduino • HC-SR04 • Relay</p>
+        </article>
+
+        <article class="card">
+          <h3>Bluetooth-Controlled Robotic Car</h3>
+          <p>Remote control via HC-05 and smartphone; L293D motor driver based platform.</p>
+          <p class="meta">Arduino • HC-05 • L293D</p>
+        </article>
+
+        <article class="card">
+          <h3>Home Security Alarm (Stateflow)</h3>
+          <p>Simulink + Stateflow state machine for intrusion detection and automated alerts.</p>
+          <p class="meta">MATLAB • Stateflow</p>
+        </article>
+
+        <article class="card">
+          <h3>Solar Tracking System</h3>
+          <p>Dual-axis LDR-based tracker to increase panel efficiency using servos.</p>
+          <p class="meta">Arduino • LDR • Servo</p>
+        </article>
+
+        <article class="card">
+          <h3>Sign Language Recognition</h3>
+          <p>Prototype using computer vision and ML to translate hand gestures to text/speech.</p>
+          <p class="meta">Python • CV • ML</p>
+        </article>
+
+        <article class="card">
+          <h3>Elephant Detection &amp; Alert</h3>
+          <p>AI-based detection with IoT alerting to reduce human-elephant conflicts near boundaries and rail tracks.</p>
+          <p class="meta">AI • IoT • Edge Alerts</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>I'm a 3rd year ENTC student from Pune. I focus on building practical hardware-software solutions — from robotics to intelligent monitoring systems. I work primarily with microcontrollers (Arduino), MATLAB for simulations, and Python for prototypes.</p>
+      <ul class="info">
+        <li><strong>Email:</strong> <a href="mailto:utkarsha.bisen23@pccoepune.org">utkarsha.bisen23@pccoepune.org</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/utkarsha-bisen-964786327" target="_blank" rel="noopener">/in/utkarsha-bisen-964786327</a></li>
+        <li><strong>Location:</strong> Pune, India</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Open for internships and collaborative projects. Reach me at:</p>
+      <p class="email"><a href="mailto:utkarsha.bisen23@pccoepune.org">utkarsha.bisen23@pccoepune.org</a></p>
+    </section>
+
+    <footer class="site-footer container">
+      <p>© 2025 Utkarsha Bisen · Built with HTML &amp; CSS</p>
+    </footer>
+  </main>
+
+  <script>
+    // smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        var t = document.querySelector(this.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
